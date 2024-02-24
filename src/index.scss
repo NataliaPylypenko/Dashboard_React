@@ -30,20 +30,13 @@
   --white: #FFF;
 }
 
-.body {
+body {
   font-family: var(--ff_main);
   font-size: var(--fz-main);
   line-height: var(--lh-main);
   font-weight: var(--fw-main);
   color: var(--darkGray);
   background-color: var(--lightGray);
-}
-
-.wrapper {
-  display: grid;
-  min-height: 100vh;
-  grid-template-rows: auto auto 1fr auto;
-  gap: 30px;
 }
 
 /*--------------------- /General ---------------------*/
