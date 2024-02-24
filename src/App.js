@@ -8,7 +8,7 @@ function App() {
       <Router>
         <Navbar />
 
-        <div className='container'>
+        <div className='container section'>
           <Switch>
             <Route path="/" exact>
               <Users />
