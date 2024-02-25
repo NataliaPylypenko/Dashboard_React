@@ -1,10 +1,10 @@
 import React from 'react';
-import CreareUserForm from "../components/createUser/CreareUserForm";
+import CreareUser from "../components/createUser/CreareUser";
 
 export const CreateUser = () => {
     return (
         <>
-            <CreareUserForm />
+            <CreareUser />
         </>
     );
 };

@@ -17,7 +17,7 @@ const UsersList = () => {
             .then(() => {
                 setUsers(users.filter(user => user.id !== id));
             })
-            .catch(error => console.error('Error deleting user:', error));
+            .catch(error => console.error('Error deleting editUser:', error));
     };
 
     return (

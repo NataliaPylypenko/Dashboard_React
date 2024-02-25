@@ -1,5 +1,5 @@
 import React from 'react';
-import UserForm from "../components/user/UserEditForm";
+import UserForm from "../components/editUser/EditUser";
 
 export const User = () => {
     return (
