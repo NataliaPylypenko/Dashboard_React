@@ -1,0 +1,40 @@
+form {
+  position: relative;
+  padding: 24px;
+  background: #eee;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #fff;
+
+  &:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+}
+
+/* Set a style for the submit button */
+.btnRegister {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+  &:hover {
+    opacity: 1;
+  }
+}

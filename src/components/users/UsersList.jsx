@@ -1,17 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { fetchUsers, deleteUser } from "../../services/usersServices";
+import { deleteUser } from "../../services/usersServices";
+import UserContext from "../../context/UserContext";
 import UserItem from "./UserItem";
 import classes from './UsersList.module.scss'
 
 const UsersList = () => {
-    const [users, setUsers] = useState([]);
+    const {users, setUsers} = useContext(UserContext);
 
     useEffect(() => {
-        fetchUsers()
-            .then(data => setUsers(data))
-            .catch(error => console.error('Error fetching users:', error));
-    }, []);
+        setUsers(users)
+    }, [users]);
 
     const handleDeleteUser = id => {
         deleteUser(id)
