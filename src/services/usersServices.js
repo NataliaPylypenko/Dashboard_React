@@ -19,3 +19,12 @@ export const updateUser = (id, obj) => {
     }).then(data => data.json());
 };
 
+export const addUser = (obj) =>
+    fetch(API, {
+        method: 'POST',
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+        body: JSON.stringify(obj)
+    }).then(data => data.json());
+
