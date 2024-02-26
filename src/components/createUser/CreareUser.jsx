@@ -33,7 +33,7 @@ const CreareUser = () => {
     return (
         <>
             <h2>Create New User</h2>
-            <FormUser formData={formData} handleSubmit={handleSubmit} handleChange={handleChange} nameButton='Create User' />
+            <FormUser formData={formData} handleSubmit={handleSubmit} handleChange={handleChange} nameButtonCancel='Cancel' nameButtonCreate='Create User' />
         </>
     );
 };

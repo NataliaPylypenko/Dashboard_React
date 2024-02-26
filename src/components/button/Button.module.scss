@@ -1,15 +1,23 @@
-/* Set a style for the submit button */
-.btnRegister {
-  background-color: #04AA6D;
-  color: white;
+.btn {
+  border: none;
+  width: 100%;
   padding: 16px 20px;
   margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
   opacity: 0.9;
+  cursor: pointer;
 
   &:hover {
     opacity: 1;
   }
+}
+
+.btnCancel {
+  color: #04AA6D;
+  text-decoration: none;
+}
+
+.btnRegister {
+  background-color: #04AA6D;
+  color: white;
+
 }

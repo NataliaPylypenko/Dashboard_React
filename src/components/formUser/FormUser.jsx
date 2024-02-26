@@ -3,7 +3,7 @@ import {useHistory} from "react-router-dom/cjs/react-router-dom.min";
 import Button from "../button/Button";
 import classes from "./FormUser.module.scss";
 
-const FormUser = ({formData, handleSubmit, handleChange, nameButton}) => {
+const FormUser = ({formData, handleSubmit, handleChange, nameButtonCancel, nameButtonCreate}) => {
     const history = useHistory();
 
     return (
@@ -29,8 +29,8 @@ const FormUser = ({formData, handleSubmit, handleChange, nameButton}) => {
                 <input type="text" name="street" value={formData.street} onChange={handleChange} />
             </div>
 
-            <button className={classes.btn + ' ' + classes.btnCancel} onClick={() => history.push('/')}>Cancel</button>
-            <Button>{nameButton}</Button>
+            <Button handleClick={() => history.push('/')}>{nameButtonCancel}</Button>
+            <Button type="submit">{nameButtonCreate}</Button>
         </form>
     );
 };

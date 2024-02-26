@@ -1,13 +1,14 @@
 import React from 'react';
 import classes from "./Button.module.scss"
 
-const Button = (props) => {
+const Button = ({type, handleClick, children}) => {
     return (
         <button
-            type="submit"
-            className={classes.btnRegister}
+            type={type || 'button'}
+            className={type ? `${classes.btn} ${classes.btnRegister}` : `${classes.btn} ${classes.btnCancel}`}
+            onClick={!type ? handleClick : undefined}
         >
-            {props.children}
+            {children}
         </button>
     );
 };
